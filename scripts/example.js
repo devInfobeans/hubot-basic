@@ -12,4 +12,8 @@ module.exports = (robot) => {
     const t = `${d.getHours()}:${d.getMinutes()} and ${d.getSeconds()} seconds`
     res.reply(`It's ${t}`)
   })
+  robot.respond(/(who are you|who is this)/gi, (res) => {
+   
+    res.reply(`I am your personal chatbot`)
+  })
 }
